@@ -1,0 +1,7 @@
+Products				Customers				Orders		
+Column Name	Data Type	Description		Column Name	Data Type	Description		Column Name	Data Type	Description
+product_id	INT	Primary key. Auto-incremented ID for each product		customer_id	INT	Primary key. Auto-incremented ID for each customer		order_id	INT	Primary key. Auto-incremented ID for each order
+product_name	VARCHAR(100)	Name or title of the product		customer_name	VARCHAR(100)	Full name of the customer		customer_id	INT	Refers to the customer who placed the order
+price	"DECIMAL(10,2)"	Price of the product in Indian Rupees		email	VARCHAR(100)	Email address of the customer for communication and receipts		product_id	INT	Refers to the product that was purchased
+stock_quantity	INT	Number of units currently in stock						quantity	INT	Number of product units purchased in the order
+								order_date	DATE	Date when the order was placed
