@@ -1,0 +1,48 @@
+INSERT INTO airlines (airline_id, airline_name, country) VALUES
+(1, 'IndiGo', 'India'),
+(2, 'Emirates', 'UAE'),
+(3, 'Singapore Airlines', 'Singapore'),
+(4, 'Lufthansa', 'Germany');
+INSERT INTO passengers (passenger_id, full_name, gender, nationality) VALUES
+(1, 'Rahul Anand', 'Male', 'India'),
+(2, 'Aisha Khan', 'Female', 'UAE'),
+(3, 'John Doe', 'Male', 'USA'),
+(4, 'Emily Clark', 'Female', 'UK'),
+(5, 'Takeshi Yamamoto', 'Male', 'Japan'),
+(6, 'Priya Mehta', 'Female', 'India'),
+(7, 'Carlos Rivera', 'Male', 'Spain'),
+(8, 'Fatima Zahra', 'Female', 'Morocco'),
+(9, 'Anna Müller', 'Female', 'Germany'),
+(10, 'David Lee', 'Male', 'South Korea');
+INSERT INTO flights (flight_id, airline_id, flight_number, origin, destination, departure_time, arrival_time, status) VALUES
+(1, 4, 'LU568', 'Delhi', 'New York', '2024-09-06 12:00:00', '2024-09-06 20:00:00', 'Completed'),
+(2, 3, 'SI843', 'Mumbai', 'Frankfurt', '2024-09-03 10:00:00', '2024-09-03 14:00:00', 'Delayed'),
+(3, 4, 'LU104', 'Mumbai', 'Frankfurt', '2024-09-11 02:00:00', '2024-09-11 06:00:00', 'Completed'),
+(4, 1, 'IN136', 'Dubai', 'Frankfurt', '2024-09-06 01:00:00', '2024-09-06 06:00:00', 'Cancelled'),
+(5, 2, 'EM928', 'Dubai', 'London', '2024-09-11 00:00:00', '2024-09-11 10:00:00', 'Delayed'),
+(6, 2, 'EM384', 'Tokyo', 'London', '2024-09-01 12:00:00', '2024-09-01 18:00:00', 'Completed'),
+(7, 3, 'SI961', 'Frankfurt', 'Delhi', '2024-09-02 11:00:00', '2024-09-02 17:00:00', 'Completed'),
+(8, 4, 'LU572', 'Tokyo', 'Dubai', '2024-09-07 06:00:00', '2024-09-07 12:00:00', 'Completed'),
+(9, 4, 'LU486', 'Mumbai', 'Tokyo', '2024-09-08 03:00:00', '2024-09-08 05:00:00', 'Scheduled'),
+(10, 4, 'LU670', 'Delhi', 'Singapore', '2024-09-03 02:00:00', '2024-09-03 04:00:00', 'Delayed');
+INSERT INTO bookings (booking_id, passenger_id, flight_id, booking_date, seat_class, seat_number, fare, status) VALUES
+(1, 1, 3, '2024-08-24', 'Business', '15C', 44504.17, 'Cancelled'),
+(2, 5, 5, '2024-08-23', 'Business', '12B', 27188.51, 'Cancelled'),
+(3, 7, 4, '2024-08-25', 'Business', '29E', 36562.49, 'Checked-In'),
+(4, 9, 4, '2024-08-25', 'Business', '4A', 15718.43, 'Confirmed'),
+(5, 5, 10, '2024-08-23', 'Business', '15C', 35958.72, 'Confirmed'),
+(6, 6, 3, '2024-08-23', 'Business', '11F', 27756.62, 'Checked-In'),
+(7, 1, 7, '2024-08-22', 'Business', '30C', 5878.45, 'Confirmed'),
+(8, 3, 1, '2024-08-22', 'Economy', '28F', 15570.26, 'Cancelled'),
+(9, 4, 4, '2024-08-23', 'Business', '25A', 15277.19, 'Confirmed'),
+(10, 4, 4, '2024-08-25', 'Business', '15C', 24474.4, 'Confirmed'),
+(11, 2, 1, '2024-08-21', 'Business', '19E', 14303.39, 'Checked-In'),
+(12, 6, 4, '2024-08-20', 'First', '17E', 24767.41, 'Checked-In'),
+(13, 2, 6, '2024-08-25', 'Economy', '25B', 31643.66, 'Checked-In'),
+(14, 10, 9, '2024-08-25', 'First', '9F', 44702.48, 'Cancelled'),
+(15, 7, 2, '2024-08-20', 'Economy', '22D', 12625.11, 'Checked-In'),
+(16, 8, 5, '2024-08-24', 'Business', '19B', 23310.79, 'Confirmed'),
+(17, 8, 6, '2024-08-20', 'First', '8E', 35431.92, 'Checked-In'),
+(18, 6, 2, '2024-08-20', 'Business', '14F', 26308.81, 'Confirmed'),
+(19, 3, 3, '2024-08-20', 'Economy', '20B', 22566.46, 'Checked-In'),
+(20, 1, 6, '2024-08-25', 'Economy', '25D', 33601.15, 'Checked-In');
